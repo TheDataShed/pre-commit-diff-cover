@@ -1,0 +1,1 @@
+# pre-commit-diff-cover
