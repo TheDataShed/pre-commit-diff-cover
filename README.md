@@ -15,7 +15,7 @@ Under the hood this uses:
 ## Usage
 
 ```yaml
-  - repo: https://github.com/gvee-uk/pre-commit-diff-cover
+  - repo: https://github.com/TheDataShed/pre-commit-diff-cover
     rev: v0.0.1
     hooks:
     - id: diff-cover
