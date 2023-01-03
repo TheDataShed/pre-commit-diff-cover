@@ -1,0 +1,10 @@
+-   id: diff-cover
+    name: diff-cover
+    description: Run diff-cover to
+    entry: diff_cover
+    language: python
+    types: [file, python]
+    require_serial: true  # `coverage` has issues running parallel
+    pass_filenames: true
+    stages:
+      - commit

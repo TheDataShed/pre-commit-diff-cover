@@ -1,0 +1,12 @@
+on: [push]
+jobs:
+  pre_commit:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: /home/runner/.cache/
+          key: "pre-commit==2.20.0"
+      - run: python3 -m pip install pre-commit==2.20.0
+      - run: pre-commit run --all
