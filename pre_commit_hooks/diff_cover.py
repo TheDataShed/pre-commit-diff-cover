@@ -55,8 +55,6 @@ def run_pytest(configuration: Configuration) -> int:
                 "--failed-first",
                 "--new-first",  # run new tests first
                 "--last-failed",
-                # if no previous fails, skip all
-                "--last-failed-no-failures=none",
             ]
         )
 
